@@ -1,0 +1,169 @@
+h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 39px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+#logo:hover{
+    color: rgb(88, 86, 245);
+}
+
+#logo {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.search-form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 580px;
+   
+}
+.search-input{
+    width: 330px;
+    height: 29px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 0.4rem;
+}
+
+button{
+        background-color: rgb(42, 41, 41); /* Green */
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 17px;
+        margin-bottom: 8px;
+}
+
+button:hover{ background-color : rgb(128, 126, 240); }
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 2rem 0;
+    width: 90%;
+    margin: auto;
+    row-gap: 1rem;
+    column-gap: 2rem;
+}
+
+.gallery-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.download a{
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.download a:hover{
+    color:  rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+#redirect{
+    background-color: rgb(42, 41, 41); /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+    margin-bottom: 8px;
+    margin-right: 7px;
+}
+#redirect:hover, #redire:hover{
+    background-color : rgb(128, 126, 240);
+}
+#redire{
+    margin-top: 5px;
+    background-color: rgb(42, 41, 41); /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+    margin-bottom: 8px;
+    margin-right: 7px;
+}
+.nav-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -19px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    body{
+       padding: 0;
+        margin-left: -5px;
+    }
+  h2{
+      font-size: 37px;
+      margin-left: 15px;
+  }
+  .search-form{
+     margin-left: 170px;
+  }
+   
+  .search-input{
+      width: 260px;
+      height: 20px;
+      margin-bottom: -10px;
+  }
+  .submit-btn{
+      padding: 0.5rem 0.7rem;
+      margin-top: 25px;
+  }
+  .gallery{
+      margin-top: -10px;
+  }
+  .download{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: -7px;
+  }
+
+  .more{
+      margin-top: -5px;
+      padding: 0.5rem 1.2rem;
+      border-radius: 90%;
+      background-color: teal;
+  }
+  #redirect{
+      margin-bottom: -5px;
+      padding: 0.3rem 1.7rem;
+  }
+}
+
